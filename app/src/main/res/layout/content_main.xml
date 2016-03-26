@@ -8,7 +8,6 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="#4caf50"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.neeraj.myappportfolio.MainActivity"
     tools:showIn="@layout/activity_main">
@@ -16,96 +15,103 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingLeft="40dp"
-        android:paddingRight="40dp"
-        >
+        android:layout_marginBottom="48dp">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="My Nanodegree Apps!"
-            android:layout_centerHorizontal="true"
             android:id="@+id/textView"
-            android:textSize="24sp"
-            android:textColor="#f44336"/>
-
-        <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Spotify Streamer"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="#000000"
-            android:id="@+id/button"
-            android:layout_below="@+id/textView"
             android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="My Nanodegree Apps!"
+            android:textColor="#f44336"
+            android:textSize="24sp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_marginTop="24dp"
-            android:layout_marginBottom="16dp"
-            android:onClick="displayToast1"
-            android:background="#ff6666"/>
+            android:layout_height="match_parent"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp">
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Scores App"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="#000000"
-            android:id="@+id/button2"
-            android:layout_below="@+id/button"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="16dp"
-            android:onClick="displayToast2"
-            android:background="#ff6666"/>
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="24dp"
+                android:background="#f08c35"
+                android:onClick="displayToast1"
+                android:text="Spotify Streamer"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#000000" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Library App"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="#000000"
-            android:id="@+id/button3"
-            android:layout_below="@+id/button2"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="16dp"
-            android:onClick="displayToast3"
-            android:background="#ff6666"/>
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:background="#f08c35"
+                android:onClick="displayToast2"
+                android:text="Scores App"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#000000" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Build It Bigger"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="#000000"
-            android:id="@+id/button4"
-            android:layout_below="@+id/button3"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="16dp"
-            android:onClick="displayToast4"
-            android:background="#ff6666"/>
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:background="#f08c35"
+                android:onClick="displayToast3"
+                android:text="Library App"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#000000" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="XYZ Reader"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="#000000"
-            android:id="@+id/button5"
-            android:layout_below="@+id/button4"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="16dp"
-            android:onClick="displayToast5"
-            android:background="#ff6666"/>
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:background="#f08c35"
+                android:onClick="displayToast4"
+                android:text="Build It Bigger"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#000000" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Capstone: My own App"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="#000000"
-            android:id="@+id/button6"
-            android:layout_below="@+id/button5"
-            android:layout_centerHorizontal="true"
-            android:onClick="displayToast6"
-            android:background="#66b3ff"/>
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:background="#f08c35"
+                android:onClick="displayToast5"
+                android:text="XYZ Reader"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button5"
+                android:layout_centerHorizontal="true"
+                android:background="#66b3ff"
+                android:onClick="displayToast6"
+                android:text="Capstone: My own App"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#000000" />
+        </RelativeLayout>
     </RelativeLayout>
 
 </ScrollView>
